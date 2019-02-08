@@ -1,4 +1,7 @@
 package com.choegu.firebasetest
 
-class SecondActivity {
+import android.support.v7.app.AppCompatActivity
+
+class SecondActivity: AppCompatActivity() {
+
 }
