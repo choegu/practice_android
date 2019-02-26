@@ -3,6 +3,7 @@ package com.choegu.practicepermission
 import android.Manifest
 import android.content.pm.PackageManager
 import android.os.Bundle
+import android.provider.Telephony
 import android.support.v4.app.ActivityCompat
 import android.support.v4.content.ContextCompat
 import android.support.v7.app.AppCompatActivity
@@ -21,6 +22,8 @@ class MainActivity : AppCompatActivity() {
         btn_check_per.setOnClickListener {
             checkPermission()
         }
+
+        Message.readSmsMms(applicationContext)
     }
 
     /**
@@ -68,7 +71,6 @@ class MainActivity : AppCompatActivity() {
             REQUEST_PERMISSIONS -> {
                 if (grantResults.isNotEmpty()
                     && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-
                     // 사용자가 권한 허용한 경우이므로, 작업 진행
 
                 } else {
@@ -79,4 +81,6 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
+
+
 }
