@@ -1,3 +1,8 @@
+/**
+ * 할로윈 이벤트 당시 사용했던 1회용 코드입니다.
+ * 특정 액티비티에서 랜덤한 위치에 lottie 호박 애니메이션을 나타내고, 클릭 시 이벤트를 발생시킵니다. 
+ */
+
 package com.apposter.watchmaker.event
 
 import android.animation.Animator
